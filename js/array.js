@@ -52,4 +52,8 @@ const prefectures = [
 prefectures.forEach((prefecture) => {
     console.log(prefecture);
 });
+for (const prefecture of prefectures) {
+    console.log(prefecture);
+}
+console.table(prefectures);
 //# sourceMappingURL=array.js.map

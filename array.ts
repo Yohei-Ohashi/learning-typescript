@@ -51,3 +51,9 @@ const prefectures: string[] = [
 prefectures.forEach((prefecture: string) => {
   console.log(prefecture);
 });
+
+for (const prefecture of prefectures) {
+  console.log(prefecture);
+}
+
+console.table(prefectures);
