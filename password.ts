@@ -20,6 +20,14 @@ const seeds: string[] = [
   "~", "`", ".", " ",
 ];
 
-const random = Math.floor(Math.random() * seeds.length);
+const passwordLength: number = Number(process.argv[2]);
+let password: string = "";
+let random: number;
 
-console.log(seeds[random]);
+for (let i: number = 0; i < passwordLength; i++) {
+  random = Math.floor(Math.random() * seeds.length);
+  password += seeds[random];
+
+} 
+
+console.log(password);

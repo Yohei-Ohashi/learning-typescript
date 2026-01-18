@@ -20,6 +20,12 @@ const seeds = [
     "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ":", ";", ",", ".", "/", "?",
     "~", "`", ".", " ",
 ];
-const random = Math.floor(Math.random() * seeds.length);
-console.log(seeds[random]);
+const passwordLength = Number(process.argv[2]);
+let password = "";
+let random;
+for (let i = 0; i < passwordLength; i++) {
+    random = Math.floor(Math.random() * seeds.length);
+    password += seeds[random];
+}
+console.log(password);
 //# sourceMappingURL=password.js.map
