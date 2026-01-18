@@ -1,0 +1,6 @@
+export const TAX: number = 1.1;
+export default abstract class Item {
+  name: string = "";
+  price: number = 0;
+  abstract getTaxPrice(): number;
+}
