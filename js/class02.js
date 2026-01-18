@@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class Item {
     _name = "";
     _stock = 0;
+    constructor(name, stock) {
+        this.name = name;
+        this.stock = stock;
+    }
     get name() {
         return this._name;
     }
@@ -21,8 +25,6 @@ class Item {
         }
     }
 }
-let peach = new Item();
-peach.name = "もも";
-peach.stock = 3;
+let peach = new Item("もも", 5);
 console.log(peach.stock);
 //# sourceMappingURL=class02.js.map
